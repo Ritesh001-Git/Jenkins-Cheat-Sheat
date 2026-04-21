@@ -27,3 +27,11 @@ Jenkins is an open-source Automation Server.
 Before Jenkins, a developer had to manually compile code, manually run tests on their machine, and manually FTP files to a server. Jenkins "listens" for changes and does all of this for you.
 - Extensibility: It has over 1,500+ plugins. If you want to connect to AWS, Docker, Slack, or Jira, there’s a plugin for it.
 - Automation: It turns human-error-prone tasks into repeatable, "one-click" (or zero-click) processes.
+
+### The Universal Work of Jenkins (The "Orchestrator")
+Jenkins doesn't usually "do" the work itself; it commands other tools to do it. It acts as the Conductor of an Orchestra:
+
+- The Trigger: Jenkins sees a change in Git.
+- The Command: Jenkins tells Maven or Gradle to "Build the project."
+- The Verification: Jenkins tells JUnit or Selenium to "Run the tests."
+- The Shipment: Jenkins tells Docker or Ansible to "Deploy this to the cloud.
